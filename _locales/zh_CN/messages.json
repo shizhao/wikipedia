@@ -1,0 +1,30 @@
+{
+  "name": {
+    "message": "维基百科",
+    "description": "name"
+  },
+  "desc": {
+    "message": "维基百科，自由的百科全书",
+    "description": "description"
+  },
+  "notice": {
+    "message": "你有新消息。",
+    "description": "notification"
+  },
+  "bnotice": {
+    "message": "通知:",
+    "description": "notification"
+  },
+  "siteurl": {
+    "message": "http://zh.wikipedia.org/",
+    "description": "main page url"
+  },
+  "siteurl1": {
+    "message": "http://zh.wikipedia.org/",
+    "description": "main page url"
+  },
+  "lang": {
+    "message": "zh",
+    "description": "lang"
+  }
+}

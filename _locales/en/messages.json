@@ -1,0 +1,30 @@
+{
+  "name": {
+    "message": "Wikipedia",
+    "description": "name"
+  },
+  "desc": {
+    "message": "Wikipedia, the free encyclopedia",
+    "description": "description"
+  },
+  "notice": {
+    "message": "You have new messages.",
+    "description": "notification"
+  },
+  "bnotice": {
+    "message": "Notice:",
+    "description": "notification"
+  },
+  "siteurl": {
+    "message": "http://en.wikipedia.org/",
+    "description": "main page url"
+  },
+  "siteurl1": {
+    "message": "http://en.wikipedia.org/",
+    "description": "main page url"
+  },
+  "lang": {
+    "message": "en",
+    "description": "lang"
+  }
+}

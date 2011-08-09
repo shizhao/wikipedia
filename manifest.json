@@ -1,0 +1,21 @@
+{
+  "name": "__MSG_name__",
+  "description": "__MSG_desc__",
+  "version": "1.2",
+  "app": {
+    "launch": {
+      "local_path": "main.html"
+    }
+  },
+  "icons": {
+    "16": "Wikipedia-logo-16.png",
+    "128": "Wikipedia-logo.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "http://*.wikipedia.org/*",
+    "unlimitedStorage",
+    "notifications"
+  ],
+  "background_page" : "background.html"
+}

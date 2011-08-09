@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+ * Copyright (c) 2011 by Shizhao.  Use of this
+ * source code is governed by a BSD license.
+-->
+<html>
+  <head>
+    <script>
+       noti()
+       function noti()
+       {
+        var xhr = new XMLHttpRequest();
+        siteurl=chrome.i18n.getMessage("siteurl");
+        var url = siteurl+'w/api.php?action=query&meta=userinfo&uiprop=hasmsg&format=json';
+        xhr.open('GET', url, true);
+        xhr.onreadystatechange = function(data) {
+           if (xhr.readyState == 4) {
+             var data = JSON.parse(xhr.responseText);
+             var messages=data.query.userinfo.messages;
+             if (data != null)
+             {
+               if (messages=="") {
+            r= chrome.i18n.getMessage("notice");
+            n=chrome.i18n.getMessage("bnotice");
+          var notification = webkitNotifications.createNotification(
+         'Wikipedia-logo.png',  // icon url - can be relative
+         n,  // notification title
+         r  // notification body text
+         );
+// Then show the notification.
+                notification.show();
+               }
+             }
+           }
+         }
+         xhr.send(null);
+       }
+      setInterval(noti, 60*60*1000);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
